@@ -20,14 +20,11 @@ rainfallamt[9] = 97;
 rainfallamt[10] = 83;
 rainfallamt[11] = 140;
 
-int countr = 0;
-
 Console.WriteLine(spcr + "Rainfall Records and Average Calculator: ");
 
-while(countr < 12)
+for(int i = 0; i < 12; i++)
 {
-    Console.WriteLine(spcr + "Rainfall in month " + (countr + 1) + " : " + rainfallamt[countr]);
-    countr = countr + 1;
+    Console.WriteLine(spcr + "Rainfall in month " + (i + 1) + " : " + rainfallamt[i]);
 }
 
 Console.WriteLine(spcr + "Rainfall average for the year: " + rainfallamt.Average());
